@@ -17,9 +17,8 @@ The visualizer mimics the human auditory system which is logarithmic. This means
 Because we are taking fixed slices of audio we use a window function to smooth out the transition between two slices. This helps emhpasize the key characteristics of each time slice.
 ### 4. Processing samples and drawing the Histogram
 FFT (Fast Fourier transform) decomposes the sequence of samples (sound wave) into components of different frequencies (base harmonics - elementary sound waves). Using the Mel filter bank we choose which components to use for each frequency band (Bar on the X axis). After choosing and calculating the magnitude for all 64 frequencies bands (Bars), corresponding rectangles represending frequency bands (Bars) are being drawn and scaled.
-<br>Small lines on top of each bar on the graph represent the maximum magnitude of the corresponding frequency band during a session.
+<br>Small lines on top of each bar on the graph represent the maximum magnitude of the corresponding frequency band during a session.<br>
 
-<br>
 ## Sidenote
 This was a fun little project I had done in my spare time at the start of the 5th semester (start of the 3rd year of collage), influenced by studying audio processing for the course - Speech recognition at the Faculty of Computer Science in Belgrade.
 
