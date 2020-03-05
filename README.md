@@ -14,9 +14,9 @@ The visualizer mimics the human auditory system which is logarithmic. This means
 
 ### 2. Reading raw data slices and writing to output (speakers) - playing audio
 ### 3. Unpacking raw data into samples and applying the Hamming window function
-Because we are taking fixed slices of audio we use a window function to smooth out the transition between two slices. This helps emhpasize the key characteristics of each time slice.
+Because we are taking fixed slices of audio we use a window function to smooth out the transition between two slices. This helps emphasize the key characteristics of each time slice.
 ### 4. Processing samples and drawing the Histogram
-FFT (Fast Fourier transform) decomposes the sequence of samples (sound wave) into components of different frequencies (base harmonics - elementary sound waves). Using the Mel filter bank we choose which components to use for each frequency band (Bar on the X axis). After choosing and calculating the magnitude for all 64 frequency bands (Bars), corresponding rectangles represending frequency bands (Bars) are being drawn and scaled.
+FFT (Fast Fourier transform) decomposes the sequence of samples (sound wave) into components of different frequencies (base harmonics - elementary sound waves). Using the Mel filter bank we choose which components to use for each frequency band (Bar on the X axis). After choosing and calculating the magnitude for all 64 frequency bands (Bars), corresponding rectangles representing frequency bands (Bars) are being drawn and scaled.
 <br>Small lines on top of each bar on the graph represent the maximum magnitude of the corresponding frequency band during a session.<br><br>
 
 ## Sidenote
