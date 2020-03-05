@@ -290,7 +290,10 @@ public class View extends Stage{
 		
 		Scene scene = new Scene(pane);
 		this.setScene(scene);
-		this.setTitle("Now playing: " + song);
+		if (Main.mode.equals("player"))
+			this.setTitle("Now playing: " + song);
+		else
+			this.setTitle("Recording...");
 		this.show();
 	}
 	
