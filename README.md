@@ -10,7 +10,7 @@ The application supports visualization and playback of .wav files, or it can dir
 
 ## Implementation details<br>
 ### 1. Calculating the Mel filter bank
-The visualizer mimics the human auditory system which is logarithmic. This means that as the frequencies get higher we can detect fewer changes in sound (We can detect differences in sound a lot better at lower frequencies). It is carefully calculated which frequencies are shown in the visualizer so it represents sound the same way we hear it. After the frequencies are calculated a triangulation filter is applied to help capture the energy at each critical frequency band and give a rough approximation of the spectrum shape.
+The visualizer mimics the human auditory system which is logarithmic. This means that as the frequencies get higher we can detect fewer changes in sound (We can detect far more differences at lower frequencies). It is carefully calculated which frequencies are shown in the visualizer so that the sound is represented in the same way we hear it. After the frequencies are calculated a triangulation filter is applied to help capture the energy at each critical frequency band and give a rough approximation of the spectrum shape.
 
 ### 2. Reading raw data slices and writing to output (speakers) - playing audio
 ### 3. Unpacking raw data into samples and applying the Hamming window function
