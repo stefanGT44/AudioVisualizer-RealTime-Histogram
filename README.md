@@ -18,7 +18,7 @@ After the Mel filter bank is created, audio processing can begin.
 ### 3. Unpacking raw data into samples and applying the Hamming window function
 Because we are taking fixed slices of audio we use a window function to smooth out the transition between two slices. This helps emphasize the key characteristics of each time slice.
 ### 4. Processing samples and drawing the Histogram
-FFT (Fast Fourier transform) decomposes the sequence of samples (sound wave) into components of different frequencies (base harmonics - elementary sound waves). Using the Mel filter bank we choose which components to use for each frequency band (Bar on the X axis). After choosing and calculating the magnitude for all 64 frequency bands (Bars), corresponding rectangles representing frequency bands (Bars) are being drawn and scaled.
+FFT (Fast Fourier transform) decomposes the sequence of samples (sound wave) into components of different frequencies (base harmonics - elementary sound waves). Using the Mel filter bank we choose which components to use for each frequency band (Bar on the X axis). After choosing the appropriate components and calculating the magnitude for all 64 frequency bands (Bars), corresponding rectangles representing frequency bands (Bars) are being drawn and scaled.
 <br>Small lines on top of each bar on the graph represent the maximum magnitude of the corresponding frequency band during a session.<br><br>
 
 ## Sidenote
