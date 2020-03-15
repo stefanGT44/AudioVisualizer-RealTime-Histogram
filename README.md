@@ -24,7 +24,7 @@ FFT (Fast Fourier transform) decomposes the sequence of samples (sound wave) int
 <br>Small lines on top of the bars on the graph represent the maximum magnitudes of the corresponding frequency bands during a session.<br><br>
 
 ## Sidenote
-This was a fun little project I had done in my spare time at the start of the 5th semester (start of the 3rd year of college), influenced by studying audio processing for the course - Speech recognition at the Faculty of Computer Science in Belgrade.
+This was a small side project I had done in my spare time at the start of the 5th semester (start of the 3rd year of college), influenced by studying audio processing for the course - Speech recognition at the Faculty of Computer Science in Belgrade.
 
 ## Download
 You can download the .jar files [here](downloads).<br>
