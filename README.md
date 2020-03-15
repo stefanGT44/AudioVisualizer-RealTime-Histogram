@@ -1,4 +1,4 @@
-# RealTime-AudioVisualizer-Histogram
+# AudioVisualizer-RealTime-Histogram
 This is a small JavaFX desktop application for real-time audio visualization (histogram) built from scratch.
 
 ## Overview
