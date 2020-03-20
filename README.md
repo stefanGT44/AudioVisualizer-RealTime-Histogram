@@ -11,7 +11,7 @@ The application supports visualization and playback of .wav files, or it can dir
 
 ## Implementation details<br>
 ### 1. Calculating the Mel filter bank
-The visualizer mimics the human auditory system, which is logarithmic in its nature. This means that as the frequencies get higher we can detect fewer changes in sound. That is why the Mel scale is used to select which frequencies are shown in the visualizer and how their amplitudes are calculated. The Mel filter bank is an array of logarithmically spaced frequencies, the filters are triangular which means the first filter starts at index 0, has a center at index 1 and ends at index 2, the second filter starts at index 1, has a center at 2 and ends at 3 etc. Since there are 64 bars (frequency bands) in the histogram, 64 filters are needed -> there are 66 frequencies in the filter bank array.
+The visualizer mimics the human auditory system, which is logarithmic in its nature. This means that as the frequencies get higher we can detect fewer changes in sound. That is why the Mel scale is used to select which frequencies are shown in the visualizer and how their amplitudes are calculated. The Mel filter bank is an array of logarithmically spaced frequencies, the filters are triangular and overlapping which means the first filter starts at index 0, has a center at index 1 and ends at index 2, the second filter starts at index 1, has a center at 2 and ends at 3 etc. Since there are 64 bars (frequency bands) in the histogram, 64 filters are needed -> there are 66 frequencies in the filter bank array.
 
 ![Alt text](images/melbank.png?raw=true "10 filter example")
 
