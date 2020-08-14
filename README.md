@@ -2,7 +2,7 @@
 This is a small JavaFX desktop application for real-time audio visualization (histogram) built from scratch.
 
 ## Overview
-The application supports visualization and playback of .wav files, or it can directly visualize microphone input.
+The application supports visualization and playback of .wav files or direct microphone input.
 <br> The audio is visually represented with a histogram - bars on the X axis represent frequencies ranging from 43Hz up to 22050Hz, the Y axis represents the amplitude (strength) of frequencies.
 
 ![Alt text](images/pic3.png?raw=true "")
